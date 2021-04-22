@@ -19,7 +19,7 @@ def start(m):
 	keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True)
 	keyboard.add(*[types.KeyboardButton(name) for name in [u"\u5713", u"\uFFE5", u"\u20A9", u"\u0024", u"\u20AC"]])
 	bot.send_message(m.chat.id, 'Бот показывает лучшие курсы обмена Валюты по Владивостоку.')
-	bot.send_message(m.chat.id, 'Данный бот был действительно создан Георгием Батуриным. А Вы, скорее всего, узнали о нем через его резюме. Для связи с автором просто позвоните: +7(914)076-74-13')
+	bot.send_message(m.chat.id, 'Данный бот был создан Георгием Батуриным. Для связи с автором просто напишите в телеграм: @may_be_yes_may_be_no')
 	
 	if m.chat.id !=222306228:
 		bot.send_message(222306228,"Новый юзер с id {}".format(m.chat.id))
